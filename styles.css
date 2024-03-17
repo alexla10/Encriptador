@@ -1,0 +1,48 @@
+.input-field{
+    position: relative;
+    margin: 20px;
+}
+
+.formulario{
+    background-color: black;
+    padding: 20px 0;
+}
+
+.input-field input {
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 15px;
+    border: 2px solid #fff;
+    color: #fff;
+    outline: none;
+    background: transparent;
+}
+
+input:focus{
+    border: 2px solid aquamarine;
+}
+
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 19px;
+    pointer-events: none;
+    color: #fff;
+    transition: .3s;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label{
+    top: 0;
+    left: 15px;
+    font-size: 16px;
+    padding: 0 2px;
+    background-color: #060b23;
+}
+
+input:focus + label{
+    color: aquamarine;
+}
